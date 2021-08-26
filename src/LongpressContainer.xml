@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.longpresscontainer.LongpressContainer" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Longpress Container</name>
+    <description>A container with a longpress event on native</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="content" type="widgets" required="true">
+              <caption>Content</caption>
+              <description></description>
+            </property>
+            <property key="action" type="action">
+              <caption>On LongPress</caption>
+              <description>Fires after a user has held a press on the container for 500ms</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
