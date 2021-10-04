@@ -9,7 +9,7 @@
     "node": ">=12"
   },
   "config": {
-    "projectPath": "/Users/conner.charlebois/Documents/Mendix/Projects/RyersonScanner-main/"
+    "projectPath": "/Users/conner.charlebois/Documents/Mendix/Projects/TwoPly-main"
   },
   "packagePath": "mendix",
   "scripts": {

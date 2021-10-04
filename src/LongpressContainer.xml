@@ -16,6 +16,10 @@
               <caption>On LongPress</caption>
               <description>Fires after a user has held a press on the container for 500ms</description>
             </property>
+            <property key="onPress" type="action">
+              <caption>On Press</caption>
+              <description>Fires after a regular press event</description>
+            </property>
         </propertyGroup>
     </properties>
 </widget>
