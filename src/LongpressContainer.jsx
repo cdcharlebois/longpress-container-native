@@ -1,9 +1,17 @@
 import { Component, createElement } from "react";
 import { Pressable } from "react-native";
 
-// import { HelloWorld } from "./components/HelloWorld";
+import { flattenStyles } from "./utils/common";
+const defaultStyle = {
+    container: {}
+};
 
-export const LongpressContainer = ({ content, action, onPress }) => {
+export const LongpressContainer = ({ content, action, onPress, style }) => {
+    const styles = flattenStyles(defaultStyle, style);
+    const stylesGetter = ({ pressed }) => ({
+        ...styles.container,
+        opacity: pressed ? 0.5 : 1
+    });
     const executeAction = act => {
         if (act && act.canExecute) {
             act.execute();
@@ -17,7 +25,7 @@ export const LongpressContainer = ({ content, action, onPress }) => {
     };
     return (
         <Pressable
-            style={({ pressed }) => [{ opacity: pressed ? 0.5 : 1.0 }]}
+            style={stylesGetter}
             android_ripple={{ radius: 100 }}
             onLongPress={handleLongPress}
             onPress={handlePress}

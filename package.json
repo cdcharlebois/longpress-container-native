@@ -9,7 +9,7 @@
     "node": ">=12"
   },
   "config": {
-    "projectPath": "/Users/conner.charlebois/Documents/Mendix/Projects/TwoPly-main"
+    "projectPath": "/Volumes/[C] Windows 10/MxProjects/NativeKitchenSink-main"
   },
   "packagePath": "mendix",
   "scripts": {
