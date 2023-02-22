@@ -1,5 +1,5 @@
-import { Component, createElement } from "react";
 import { Pressable } from "react-native";
+import { createElement } from "react";
 
 import { flattenStyles } from "./utils/common";
 const defaultStyle = {
